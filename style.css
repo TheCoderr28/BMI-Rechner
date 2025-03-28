@@ -1,0 +1,137 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
+    margin: 20px;
+    background-color:black;
+    color:white;
+    position:relative; /* für absolute Pos des Kreises */
+    overflow: hidden;
+    height: 100vh;
+}
+
+h1, form {
+    z-index: 1;
+}
+
+h1 {
+    color: #ffffff;
+    position: fixed;
+    top:5%;
+    left:45%;
+}
+
+form {
+    margin-top: 20px;
+    position: fixed;
+    top:25%;
+    left:45%;
+}
+
+label {
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.label1{
+    position: fixed;
+    top: 20%;
+    left: 43%;
+    font-size: large;
+}
+
+.label2{
+    position: fixed;
+    top: 25%;
+    left: 44%;
+    font-size: large;
+}
+
+input[type="number"] {
+    padding: 5px;
+    width: 100px;
+    position: fixed;
+    top: 20%;
+    left: 49.5%;
+}
+
+input[type="number2"] {
+    padding:5px;
+    width: 100px;
+    position: fixed;
+    top:25%;
+    left:49.5%;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #05050531;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: fixed;
+    transition: 0.3s ease;
+    top: 30%;
+    left: 49.5%;
+    width:115px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    -webkit-box-shadow:0px 0px 195px 17px rgba(45,255,196,1);
+-moz-box-shadow: 0px 0px 195px 17px rgba(45,255,196,1);
+box-shadow: 0px 0px 195px 17px rgba(45,255,196,1);
+}
+
+input[type="submit"]:hover {
+    background-color:black;
+}
+
+.glow-circle {
+    width: 5000px;
+    height: 5000px;
+    background: radial-gradient(circle, rgba(0, 255, 200, 0.8), rgba(0, 255, 200, 0));
+    
+    border-radius: 50%;
+    box-shadow: 0 0 20px 10px rgba(0, 255, 200, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transition: all 1s ease;
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+        font-size: 16px;
+    }
+
+
+h1 {
+    font-size: 24px;
+}
+
+form {
+    margin-top: 10px;
+}
+
+label {
+    font-size: 14px;
+}
+
+input[type=number] {
+    width: 80%;
+    max-width: 150px;
+    padding: 8px;
+}
+
+input[type=submit] {
+    padding: 8px 15px;
+    font-size: 14px;
+    box-shadow: 0 0 50px 10px rgba(45,255,196,0.5);
+}
+
+.glow-circle {
+    width: 2000px;
+    height: 2000px;
+    box-shadow: 0 0 10px 5px rgba(0, 255, 200, 0.3);
+}
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Ergebnis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+</head>
+
+<body>
+    
+    <h1>Ihr BMI</h1>
+    <p>Ihr BMI beträgt: {{ bmi|round(2) }} </p>
+    
+    <a href="/">
+    <button class="backbtn" type="btn">
+        <h3 class="backbtnh">Startseite</h3>
+    </button>
+    </a>
+
+    <!--Glow Circle Random-->
+    <div class="glow-circle"></div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
+    margin: 20px;
+    background-color: black;
+    color: white;
+    position: relative; /* für absolute Pos des Kreises */
+    overflow: hidden;
+    height: 100vh;;
+}
+
+.glow-circle {
+    width: 5000px;
+    height: 5000px;
+    background: radial-gradient(circle, rgba(0, 255, 200, 0.8), rgba(0, 255, 200, 0));
+    
+    border-radius: 50%;
+    box-shadow: 0 0 20px 10px rgba(0, 255, 200, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transition: all 1s ease;
+    z-index: -1;
+}
+
+h1 {
+    color: #ffffff;
+    position: absolute;
+    top:3%;
+    left:45%;
+}
+
+p {
+    font-size: 35px;;
+    position: absolute;
+    top:14%;
+    left:40%;
+}
+
+.backbtn{
+    background-color: black;
+    border:none;
+    border-radius: 5px;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    cursor: pointer;
+    position:absolute;
+    top:34%;
+    left:45%;
+    width: 130px;
+    height: 48px;
+    text-align: bottom;
+    transition: 0.3s ease-in-out;
+        
+}
+
+.backbtn:hover{
+    background-color:rgba(0, 0, 0, 0.185);
+    text-align:top;
+    
+}
+
+.backbtnh{
+    text-align: top;
+}
+
+@media (max-width: 1220px) {
+    body {
+        margin: 10px;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    a {
+        font-size: 14px;
+    }
+
+    .glow-circle {
+        width: 2000px;
+        height: 2000px;
+        background: radial-gradient(circle, rgba(0, 255, 200, 0.8), rgba(0, 255, 200, 0));
+    
+        border-radius: 50%;
+        box-shadow: 0 0 20px 10px rgba(0, 255, 200, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        transition: all 1s ease;
+        z-index: -1;
+    }
+
+    .btn {
+        background-color: rgba(0, 0, 0, 0);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 11%;
+        left: 48%;
+    }
+
+    h1 {
+        font-size: 100px;
+        position: absolute;
+        top: 5%;
+        left: 40%;
+    }
+
+    p {
+        font-size: medium;
+        position: absolute;
+        top: 8%;
+        left: 44%;
+    }
+}
